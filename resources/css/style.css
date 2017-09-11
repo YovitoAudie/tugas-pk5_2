@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'BigNoodleTitlingRegular';
+    src: url('../font/big_noodle_titling.eot');
+    src: url('../font/big_noodle_titling.eot') format('embedded-opentype'),
+         url('../font/big_noodle_titling.woff') format('woff'),
+         url('../font/big_noodle_titling.ttf') format('truetype'),
+         url('../font/big_noodle_titling.svg#BigNoodleTitlingRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'the_light_fontregular';
+    src: url('../font/thelightfont-webfont.eot');
+    src: url('../font/thelightfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/thelightfont-webfont.woff') format('woff'),
+         url('../font/thelightfont-webfont.ttf') format('truetype'),
+         url('../font/thelightfont-webfont.svg#the_light_fontregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* default Configuration*/
+body{
+	margin: 0;
+	font-family: "Helvetica Neue",Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #373737;
+}
+.clear{
+	float: none;
+	clear: both;
+}
+.center{
+	width: 1344px;
+	margin: 0 auto;
+}
+/* header configuration */
+#header{
+ 	padding: 36px 0;
+}
+#header #logo{
+	float: left;
+}
+#header .navigation{
+	float: right;
+}
+#header .navigation ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+#header .navigation ul li{
+	display: inline-block;
+	font-size: 18px;
+	font-family: "the_light_fontregular"
+}
+#header .navigation ul li a{
+	display: inline-block;
+	padding: 43px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+}
+#header .navigation ul li a:hover{
+	color: #0b63cc;
+	-webkit-transition: 0.3;
+	-moz-transition: 0.3;
+	-ms-transition: 0.3;
+	-o-transition: 0.3;
+	transition: 0.3;
+}
+/* banner config */
+#banner{
+	background: url("../images/banner.png") no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 169px;
+	color: #FFFFFF;
+	text-align: center;
+}
+#banner h1{
+	font-size: 48px;
+	font-family: "BigNoodleTitlingRegular";
+	text-transform: uppercase;
+	font-weight: normal;
+}
+#banner h2{
+`	font-size: 30px;
+	font-family: "the_light_fontregular";
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.btn-primary{
+	border: solid 3px #FFFFFF;
+	color: #FFF;
+	text-transform: uppercase;
+	font-family: "the_light_fontregular";
+	font-weight: normal;
+	font-size: 24px;
+	padding: 10px;
+	display: inline-block;
+	text-decoration: none;
+}
+/* Service Config */
+#our-services{
+	padding: 25px 0;
+	font-family: "BigNoodleTitlingRegular";
+}
+#our-services .title-content {
+	text-transform: uppercase;
+	font-size: 60px;
+	text-align: center;
+	margin-bottom: 25px;
+}
+#our-services .title-content span{
+	font-family: "the_light_fontregular"
+}
+.content-list .list-services{
+	background: #1d4996;
+	padding: 10px;
+	float: left;
+	width: 47%;
+	color: #FFFFFF;
+}
+.content-list .list-services:last-child{
+	background: #1d4996;
+	padding: 10px;
+	float: right;
+	width: 47%;
+}
+.list-services{
+	font-family: "BigNoodleTitlingRegular"
+	color: #FFFFFF;
+	font-size: 30px;
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+.list-services .text {
+	font-family: "the_light_fontregular";
+	color: #FFFFFF;
+	font-size: 24px;
+	margin-bottom: 20px;
+	line-height: 25px;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+.content-list .list-service .text{
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+.list-services .button a{
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	border: solid 2px #FFFFFF;
+	color: #FFFFFF;
+	font-family: "the_light_fontregular";
+	text-decoration: none;
+}
+#notification-subscribe {
+	background: #c2c2c2;
+	padding: 25px 0;
+	margin-top: 16px;
+}
+#notification-subscribe h2{
+	padding: 25px 0;
+	margin-top: 16px;
+	font-family: "BigNoodleTitlingRegular";
+	font-size: 40px;
+}
+#notification-subscribe h3{
+	font-family: "the_light_fontregular";
+	font-size: 20px
+}
+#notification-subscribe .left-content{
+	float: left;
+}
+#notification-subscribe .right-content{
+	float: right;
+	padding-top: 60px;
+}
+#notification-subscribe .large-btn{
+	display: inline-block;
+	background: #1c4996;
+	font-family: "the_light_fontregular";
+	font-size: 24px;
+	padding: 30px 40px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+/*footer config*/
+#footer{
+	background: #363636;
+	padding: 40px 0;
+	text-align: center;
+	color: #FFFFFF;
+	font-family: "the_light_fontregular";
+}
+/* now make it responsive  */
+@media screen and (max-width: 1366px){
+
+	.center{
+        width: auto;
+        padding: 0 20px;
+        margin: 0;
+    }
+    .banner{
+    	width: auto;
+    	padding: 0 20px;
+    	margin: 0;
+    	display: inline-block;
+    }
+}
+
+
+@media screen and (max-width : 1036px) {
+
+        #notification-subscribe .left-content,
+    #notification-subscribe .right-content{
+        float: none;
+        text-align: center;
+    }
+    #notification-subscribe .right-content{
+        padding-top : 10px;
+    }
+
+
+    .content-list .list-services,
+    .content-list .list-services.last{
+        width: auto;
+        display: block;
+        float: none;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 826px) {
+
+
+    #header .navigation,
+    #header #logo{
+        float: none;
+        width: auto;
+        margin: 0 auto;
+    }
+    #header #logo{
+        margin-bottom: 10px;
+    }
+    #header #logo img{
+        margin: 0 auto;
+        display : table;
+    }
+    #header .navigation ul{
+        display: table;
+        margin : 0 auto;
+    }
+
+    #banner h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+	 #header .navigation,
+    #header #logo{
+        float: none;
+        width: auto;
+        margin: 0 auto;
+    }
+    #header #logo{
+        margin-bottom: 10px;
+    }
+    #header #logo img{
+        margin: 0 auto;
+        display : table;
+    }
+    #header .navigation ul{
+        display: table;
+        margin : 0 auto;
+        padding: 0 auto;
+    }
+
+    #banner h1{
+        font-size: 30px;
+    }
+}
+}
